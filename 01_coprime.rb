@@ -7,10 +7,10 @@
 def coprime?(num_1, num_2)
     for i in 2..num_1 do 
         if num_1 % i == 0 and num_2 % i == 0
-            return true
+            return false
         end
     end
-    return false
+    return true
 end
 
 p coprime?(25, 12)    # => true
